@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An unofficial API for AnimeFillerList.com by Kiran Hart">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400&display=swap" rel="stylesheet">
+    <title>Anime Filler List API</title>
+    <style>
+        *,*::before, *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Overpass', sans-serif;
+        }
+
+        html, body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        body {
+            background: rgb(241, 241, 241);
+            color: rgb(20,20,20);
+            display: grid;
+            place-items: center;
+            padding: 0 25px;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        #container {
+            background: rgb(255, 255, 255);
+            max-width: 750px;
+            width: 100%;
+            min-height: 35vh;
+            height: auto;
+            border-radius: 5px;
+            padding: 25px;
+            box-shadow: rgba(0,0,0,0.1) 5px 5px 15px 5px;
+        }
+
+        #container h2 {
+            font-weight: 400;
+            font-size: 1.52rem;
+            text-align: center;
+        }
+
+        #container h4 {
+            text-align: center;
+            font-weight: 400;
+        }
+
+        #container p {
+            text-align: center;
+            margin-top: 0.5rem;
+            margin-bottom: 0.2rem;
+        }
+
+        #container h3 {
+            font-weight: 400;
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+
+        input {
+            text-align: center;
+            padding: 5px 0;
+            width: 100%;
+            margin-bottom: 0.2rem;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Anime Filler List API</h2>
+        <h4><a href="https://github.com/kiranhart">By Kiran Hart</a></h4>
+        <p>An unofficial API for www.animefillerlist.com</p>
+        <hr>
+        <div id="routes">
+            <h3>Routes</h3>
+            <input type="text" disabled placeholder="https://anime-fillerlist-api.vercel.app/v1/shows">
+            <input type="text" disabled placeholder="https://anime-fillerlist-api.vercel.app/v1/shows/:group">
+            <input type="text" disabled placeholder="https://anime-fillerlist-api.vercel.app/v1/show/:show-slug">
+            <input type="text" disabled placeholder="https://anime-fillerlist-api.vercel.app/v1/show/:show-slug/:epType">
+        </div>
+        <div id="meanings">
+            <h3>Variables</h3>
+            <p><li><strong>:group</strong> - A single character, A-Z, 0-9</li></p>
+            <p><li><strong>:show-slug</strong> - Found by visting the /shows route</li></p>
+            <p><li><strong>:epType</strong> - Valid Episode Types: <strong>canon</strong>, <strong>filler</strong>, <strong>mixed</strong></li></p>
+        </div>
+    </div>
+</body>
+</html>
