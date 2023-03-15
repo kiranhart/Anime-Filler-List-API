@@ -1,3 +1,3 @@
-declare const hello: () => void;
+declare const hello: () => Promise<void>;
 
 export { hello };
