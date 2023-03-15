@@ -1,6 +1,6 @@
 {
   "name": "anime-filler-api",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -20,5 +20,8 @@
     "tsup": "^6.6.3",
     "typescript": "^4.9.5",
     "vitest": "^0.29.2"
+  },
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12"
   }
 }
