@@ -9,12 +9,14 @@
     "test": "vitest run",
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc",
-    "ci": "pnpm run lint && pnpm run test && pnpm run build"
+    "ci": "pnpm run lint && pnpm run test && pnpm run build",
+    "release": "pnpm run ci && changeset publish"
   },
   "keywords": [],
   "author": "Kiran Hart",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "tsup": "^6.6.3",
     "typescript": "^4.9.5",
     "vitest": "^0.29.2"
