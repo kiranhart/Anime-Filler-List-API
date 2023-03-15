@@ -1,5 +1,11 @@
 # anime-filler-api
 
+## 3.0.0
+
+### Major Changes
+
+- 0800876: version 2.0 release
+
 ## 1.0.4
 
 ### Patch Changes

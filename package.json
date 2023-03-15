@@ -1,6 +1,6 @@
 {
   "name": "anime-filler-api",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "An unofficial api to get filler/cannon info about anime episodes.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
