@@ -42,12 +42,12 @@ export const getEpisode = async(slug: string, epNumber: number): Promise<Episode
         return episodes[episodes?.length - 1];
     }
 
-    return episodes?.filter(episode => episode.number === epNumber);
+    return episodes.filter(episode => episode.number === epNumber)[0] ?? [];
 }
 
-export const searchEpisodes = async(slug: string, keyword: string): Promise<Episode> => {
+export const searchEpisodes = async(slug: string, keyword: string): Promise<Episode[]> => {
     const { episodes } = await getShowData(slug);
-    return episodes?.filter(episode => episode.title.toLowerCase().includes(keyword.toLowerCase()));
+    return episodes.filter(episode => episode.title.toLowerCase().includes(keyword.toLowerCase()));
 }
 
 export const getFirstEpisode = async(slug: string): Promise<Episode> => {
