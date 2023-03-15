@@ -6,7 +6,6 @@
 I was bored so I decided to make this, it's essentially just a scraper that can gather all anime listed on anime-filler-list as well as get individual show information. Feel free to open a pull request if you have something to improve. 
 
 ## **How To Install**
-<br>
 
 ### Npm
 `` npm install anime-filler-api ``
@@ -19,7 +18,7 @@ I was bored so I decided to make this, it's essentially just a scraper that can 
 
 <br>
 
-## **Using the Filer API?**
+## **Using the Filler API?**
 DM on Discord or open a pull request and I'll include a link to your project Github/Website
 
 <br>
